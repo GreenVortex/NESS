@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.SideBar = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.ProjectLanguageData = new System.Windows.Forms.ComboBox();
             this.Preview = new System.Windows.Forms.Button();
             this.GenerateButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -54,8 +56,7 @@
             this.ProjectDescriptionData = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.ProjectLanguageData = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.Clear = new System.Windows.Forms.Button();
             this.SideBar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.ControlBar.SuspendLayout();
@@ -65,6 +66,7 @@
             // SideBar
             // 
             this.SideBar.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.SideBar.Controls.Add(this.Clear);
             this.SideBar.Controls.Add(this.label7);
             this.SideBar.Controls.Add(this.ProjectLanguageData);
             this.SideBar.Controls.Add(this.Preview);
@@ -79,8 +81,35 @@
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBar.Location = new System.Drawing.Point(0, 0);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(167, 350);
+            this.SideBar.Size = new System.Drawing.Size(167, 376);
             this.SideBar.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
+            this.label7.Location = new System.Drawing.Point(44, 246);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(109, 13);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Programming langage";
+            // 
+            // ProjectLanguageData
+            // 
+            this.ProjectLanguageData.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ProjectLanguageData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProjectLanguageData.ForeColor = System.Drawing.SystemColors.Window;
+            this.ProjectLanguageData.FormattingEnabled = true;
+            this.ProjectLanguageData.Items.AddRange(new object[] {
+            "Java",
+            "C#",
+            "Python",
+            "Ruby",
+            "Javascript"});
+            this.ProjectLanguageData.Location = new System.Drawing.Point(13, 222);
+            this.ProjectLanguageData.Name = "ProjectLanguageData";
+            this.ProjectLanguageData.Size = new System.Drawing.Size(141, 21);
+            this.ProjectLanguageData.TabIndex = 18;
             // 
             // Preview
             // 
@@ -331,7 +360,7 @@
             this.panel2.BackColor = System.Drawing.Color.LightGray;
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(167, 324);
+            this.panel2.Location = new System.Drawing.Point(167, 350);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(354, 26);
             this.panel2.TabIndex = 17;
@@ -348,39 +377,25 @@
             this.textBox2.TabIndex = 0;
             this.textBox2.Text = "Beta v36";
             // 
-            // ProjectLanguageData
+            // Clear
             // 
-            this.ProjectLanguageData.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ProjectLanguageData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProjectLanguageData.ForeColor = System.Drawing.SystemColors.Window;
-            this.ProjectLanguageData.FormattingEnabled = true;
-            this.ProjectLanguageData.Items.AddRange(new object[] {
-            "",
-            "Java",
-            "C#",
-            "Python",
-            "Ruby"});
-            this.ProjectLanguageData.Location = new System.Drawing.Point(13, 222);
-            this.ProjectLanguageData.Name = "ProjectLanguageData";
-            this.ProjectLanguageData.Size = new System.Drawing.Size(141, 21);
-            this.ProjectLanguageData.TabIndex = 18;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(44, 246);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 13);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Programming langage";
+            this.Clear.BackColor = System.Drawing.Color.Brown;
+            this.Clear.CausesValidation = false;
+            this.Clear.ForeColor = System.Drawing.SystemColors.Control;
+            this.Clear.Location = new System.Drawing.Point(9, 338);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(141, 26);
+            this.Clear.TabIndex = 4;
+            this.Clear.Text = "Clear";
+            this.Clear.UseVisualStyleBackColor = false;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(521, 350);
+            this.ClientSize = new System.Drawing.Size(521, 376);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.ProjectDescriptionData);
@@ -438,6 +453,7 @@
         private System.Windows.Forms.Button Preview;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox ProjectLanguageData;
+        private System.Windows.Forms.Button Clear;
     }
 }
 

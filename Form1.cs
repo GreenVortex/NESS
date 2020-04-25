@@ -59,7 +59,7 @@ namespace Ness
             Object selectedItem = ProjectLanguageData.SelectedItem;
             string language = selectedItem.ToString();
             //Generator
-            string[] lines = {headline,"", description,"","This project was made with " + language +"💻", "",version,ProjectVersionData.Text,"","## Install", "```sh",ProjectInstallationData.Text , "```", "", "## Usage", "```sh", ProjectUsageData.Text, "```", "", "## Author","", author, "", "## Show your support", "", "Give a ⭐️ if this project helped you!", "", "Readme created with ❤️ using [NESS](https://github.com/GreenVortex/C-/tree/master/Ness)" };
+            string[] lines = {headline,"", description,"","This project was made with " + language +"💻", "",version,ProjectVersionData.Text,"","## Install", "```sh",ProjectInstallationData.Text , "```", "", "## Usage", "```sh", ProjectUsageData.Text, "```", "", "## Author","", author, "", "## Show your support", "", "Give a ⭐️ if this project helped you!", "", "Readme created with ❤️ using [NESS](https://github.com/GreenVortex/NESS)" };
             File.WriteAllLines("Readme.md", lines);
         }
 
@@ -67,6 +67,17 @@ namespace Ness
         {
             PreviewForm preview = new PreviewForm();
             preview.ShowDialog();
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            ProjectNameData.Clear();
+            ProjectVersionData.Clear();
+            AuthorNameData.Clear();
+            ProjectLanguageData.ResetText();
+            ProjectInstallationData.Clear();
+            ProjectUsageData.Clear();
+            ProjectDescriptionData.Clear();
         }
     }
 }
