@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.SideBar = new System.Windows.Forms.Panel();
+            this.Clear = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.ProjectLanguageData = new System.Windows.Forms.ComboBox();
             this.Preview = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.ProjectDescriptionData = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.Clear = new System.Windows.Forms.Button();
             this.SideBar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.ControlBar.SuspendLayout();
@@ -83,6 +83,19 @@
             this.SideBar.Name = "SideBar";
             this.SideBar.Size = new System.Drawing.Size(167, 376);
             this.SideBar.TabIndex = 0;
+            // 
+            // Clear
+            // 
+            this.Clear.BackColor = System.Drawing.Color.Brown;
+            this.Clear.CausesValidation = false;
+            this.Clear.ForeColor = System.Drawing.SystemColors.Control;
+            this.Clear.Location = new System.Drawing.Point(9, 338);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(141, 26);
+            this.Clear.TabIndex = 4;
+            this.Clear.Text = "Clear";
+            this.Clear.UseVisualStyleBackColor = false;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // label7
             // 
@@ -371,24 +384,11 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.textBox2.Location = new System.Drawing.Point(282, 3);
+            this.textBox2.Location = new System.Drawing.Point(264, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(74, 19);
+            this.textBox2.Size = new System.Drawing.Size(87, 19);
             this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "Beta v36";
-            // 
-            // Clear
-            // 
-            this.Clear.BackColor = System.Drawing.Color.Brown;
-            this.Clear.CausesValidation = false;
-            this.Clear.ForeColor = System.Drawing.SystemColors.Control;
-            this.Clear.Location = new System.Drawing.Point(9, 338);
-            this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(141, 26);
-            this.Clear.TabIndex = 4;
-            this.Clear.Text = "Clear";
-            this.Clear.UseVisualStyleBackColor = false;
-            this.Clear.Click += new System.EventHandler(this.Clear_Click);
+            this.textBox2.Text = "Version 1.0";
             // 
             // Main
             // 
