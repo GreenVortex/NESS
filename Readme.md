@@ -5,7 +5,7 @@
 This project was made with C#💻
 
 ## Version
-Release 1.0
+Release 1.1
 
 ## Install
 ```sh

@@ -51,7 +51,9 @@ namespace Ness
 
         private void GenerateButton_Click(object sender, EventArgs e)
         {
-            //String Construct
+            try
+            {
+                //String Construct
             string headline = "<h1 align='center'>Welcome to " + ProjectNameData.Text + "👋</h1>";
             string version = "## " + "Version";
             string author = "👤 **" + AuthorNameData.Text + "**";
@@ -59,8 +61,14 @@ namespace Ness
             Object selectedItem = ProjectLanguageData.SelectedItem;
             string language = selectedItem.ToString();
             //Generator
-            string[] lines = {headline,"", description,"","This project was made with " + language +"💻", "",version,ProjectVersionData.Text,"","## Install", "```sh",ProjectInstallationData.Text , "```", "", "## Usage", "```sh", ProjectUsageData.Text, "```", "", "## Author","", author, "", "## Show your support", "", "Give a ⭐️ if this project helped you!", "", "Readme created with ❤️ using [NESS](https://github.com/GreenVortex/NESS)" };
-            File.WriteAllLines("Readme.md", lines);
+                string[] lines = { headline, "", description, "", "This project was made with " + language + "💻", "", version, ProjectVersionData.Text, "", "## Install", "```sh", ProjectInstallationData.Text, "```", "", "## Usage", "```sh", ProjectUsageData.Text, "```", "", "## Author", "", author, "", "## Show your support", "", "Give a ⭐️ if this project helped you!", "", "Readme created with ❤️ using [NESS](https://github.com/GreenVortex/NESS)" };
+                File.WriteAllLines("Readme.md", lines);
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Programming language selector filled with undefined charachters, please select pre-defined options", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                ProjectLanguageData.SelectedIndex = 0;
+            }
         }
 
         private void Preview_Click(object sender, EventArgs e)
