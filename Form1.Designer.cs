@@ -93,6 +93,7 @@
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(141, 26);
             this.Clear.TabIndex = 4;
+            this.Clear.TabStop = false;
             this.Clear.Text = "Clear";
             this.Clear.UseVisualStyleBackColor = false;
             this.Clear.Click += new System.EventHandler(this.Clear_Click);
@@ -122,7 +123,8 @@
             this.ProjectLanguageData.Location = new System.Drawing.Point(13, 222);
             this.ProjectLanguageData.Name = "ProjectLanguageData";
             this.ProjectLanguageData.Size = new System.Drawing.Size(141, 21);
-            this.ProjectLanguageData.TabIndex = 18;
+            this.ProjectLanguageData.TabIndex = 300;
+            this.ProjectLanguageData.TabStop = false;
             // 
             // Preview
             // 
@@ -132,6 +134,7 @@
             this.Preview.Name = "Preview";
             this.Preview.Size = new System.Drawing.Size(141, 22);
             this.Preview.TabIndex = 17;
+            this.Preview.TabStop = false;
             this.Preview.Text = "Preview";
             this.Preview.UseVisualStyleBackColor = false;
             this.Preview.Click += new System.EventHandler(this.Preview_Click);
@@ -144,6 +147,7 @@
             this.GenerateButton.Name = "GenerateButton";
             this.GenerateButton.Size = new System.Drawing.Size(141, 32);
             this.GenerateButton.TabIndex = 16;
+            this.GenerateButton.TabStop = false;
             this.GenerateButton.Text = "Generate";
             this.GenerateButton.UseVisualStyleBackColor = false;
             this.GenerateButton.Click += new System.EventHandler(this.GenerateButton_Click);
@@ -166,8 +170,10 @@
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(-36, 3);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(232, 58);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TabStop = false;
             this.textBox1.Text = "NESS";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -178,7 +184,8 @@
             this.ProjectNameData.Location = new System.Drawing.Point(12, 85);
             this.ProjectNameData.Name = "ProjectNameData";
             this.ProjectNameData.Size = new System.Drawing.Size(138, 20);
-            this.ProjectNameData.TabIndex = 3;
+            this.ProjectNameData.TabIndex = 1;
+            this.ProjectNameData.TabStop = false;
             // 
             // label1
             // 
@@ -207,7 +214,8 @@
             this.ProjectVersionData.Location = new System.Drawing.Point(12, 130);
             this.ProjectVersionData.Name = "ProjectVersionData";
             this.ProjectVersionData.Size = new System.Drawing.Size(138, 20);
-            this.ProjectVersionData.TabIndex = 5;
+            this.ProjectVersionData.TabIndex = 2;
+            this.ProjectVersionData.TabStop = false;
             // 
             // AuthorNameData
             // 
@@ -216,7 +224,8 @@
             this.AuthorNameData.Location = new System.Drawing.Point(13, 177);
             this.AuthorNameData.Name = "AuthorNameData";
             this.AuthorNameData.Size = new System.Drawing.Size(141, 20);
-            this.AuthorNameData.TabIndex = 13;
+            this.AuthorNameData.TabIndex = 3;
+            this.AuthorNameData.TabStop = false;
             // 
             // label2
             // 
@@ -250,6 +259,7 @@
             this.HelpButton.Name = "HelpButton";
             this.HelpButton.Size = new System.Drawing.Size(20, 20);
             this.HelpButton.TabIndex = 3;
+            this.HelpButton.TabStop = false;
             this.HelpButton.Text = "?";
             this.HelpButton.UseVisualStyleBackColor = false;
             this.HelpButton.Click += new System.EventHandler(this.HelpButton_Click);
@@ -261,6 +271,7 @@
             this.Hide.Name = "Hide";
             this.Hide.Size = new System.Drawing.Size(20, 20);
             this.Hide.TabIndex = 2;
+            this.Hide.TabStop = false;
             this.Hide.UseVisualStyleBackColor = false;
             this.Hide.Click += new System.EventHandler(this.Hide_Click);
             // 
@@ -271,6 +282,7 @@
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(20, 20);
             this.Exit.TabIndex = 0;
+            this.Exit.TabStop = false;
             this.Exit.UseVisualStyleBackColor = false;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -284,7 +296,8 @@
             this.ProjectInstallationData.Multiline = true;
             this.ProjectInstallationData.Name = "ProjectInstallationData";
             this.ProjectInstallationData.Size = new System.Drawing.Size(309, 63);
-            this.ProjectInstallationData.TabIndex = 7;
+            this.ProjectInstallationData.TabIndex = 4;
+            this.ProjectInstallationData.TabStop = false;
             // 
             // label3
             // 
@@ -306,7 +319,8 @@
             this.ProjectUsageData.Multiline = true;
             this.ProjectUsageData.Name = "ProjectUsageData";
             this.ProjectUsageData.Size = new System.Drawing.Size(309, 63);
-            this.ProjectUsageData.TabIndex = 9;
+            this.ProjectUsageData.TabIndex = 5;
+            this.ProjectUsageData.TabStop = false;
             // 
             // label4
             // 
@@ -328,6 +342,7 @@
             this.ProjectInstallationDataRequired.Name = "ProjectInstallationDataRequired";
             this.ProjectInstallationDataRequired.Size = new System.Drawing.Size(69, 17);
             this.ProjectInstallationDataRequired.TabIndex = 11;
+            this.ProjectInstallationDataRequired.TabStop = false;
             this.ProjectInstallationDataRequired.Text = "Required";
             this.ProjectInstallationDataRequired.UseVisualStyleBackColor = true;
             this.ProjectInstallationDataRequired.CheckedChanged += new System.EventHandler(this.ProjectInstallationDataRequired_CheckedChanged);
@@ -342,6 +357,7 @@
             this.ProjectUsageDataRequired.Name = "ProjectUsageDataRequired";
             this.ProjectUsageDataRequired.Size = new System.Drawing.Size(69, 17);
             this.ProjectUsageDataRequired.TabIndex = 12;
+            this.ProjectUsageDataRequired.TabStop = false;
             this.ProjectUsageDataRequired.Text = "Required";
             this.ProjectUsageDataRequired.UseVisualStyleBackColor = true;
             this.ProjectUsageDataRequired.CheckedChanged += new System.EventHandler(this.ProjectUsageDataRequired_CheckedChanged);
@@ -366,7 +382,8 @@
             this.ProjectDescriptionData.Multiline = true;
             this.ProjectDescriptionData.Name = "ProjectDescriptionData";
             this.ProjectDescriptionData.Size = new System.Drawing.Size(309, 63);
-            this.ProjectDescriptionData.TabIndex = 15;
+            this.ProjectDescriptionData.TabIndex = 6;
+            this.ProjectDescriptionData.TabStop = false;
             // 
             // panel2
             // 
@@ -386,9 +403,11 @@
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             this.textBox2.Location = new System.Drawing.Point(264, 3);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(87, 19);
             this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "Version 1.2";
+            this.textBox2.TabStop = false;
+            this.textBox2.Text = "Version 1.3";
             // 
             // Main
             // 

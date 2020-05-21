@@ -37,7 +37,7 @@ namespace Ness
             else
             {ProjectInstallationData.Enabled = false;
              ProjectInstallationData.Clear();
-             ProjectInstallationData.Text = "N/A";}
+             ProjectInstallationData.Text = "Project does not require an installation";}
         }
         //Sees if checkbox is selected and enables Project usage field
         private void ProjectUsageDataRequired_CheckedChanged(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace Ness
              ProjectUsageData.Enabled = true;}
             else
             {ProjectUsageData.Clear();
-             ProjectUsageData.Text = "N/A";
+             ProjectUsageData.Text = "No usage documentation required";
              ProjectUsageData.Enabled = false;}
         }
 
