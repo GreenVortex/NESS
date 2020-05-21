@@ -31,7 +31,9 @@ namespace Ness
         private void ProjectInstallationDataRequired_CheckedChanged(object sender, EventArgs e)
         {
             if (ProjectInstallationDataRequired.Checked)
-            {ProjectInstallationData.Enabled = true;}
+            {
+             ProjectInstallationData.Clear();
+             ProjectInstallationData.Enabled = true;}
             else
             {ProjectInstallationData.Enabled = false;
              ProjectInstallationData.Clear();
