@@ -26,7 +26,7 @@ namespace Ness
         //ControlBar Buttons
         private void Exit_Click(object sender, EventArgs e) {Application.Exit();}
         private void Hide_Click(object sender, EventArgs e) { this.WindowState = FormWindowState.Minimized;}
-        private void HelpButton_Click(object sender, EventArgs e) { MessageBox.Show("Ness is a Programming project README generator. Have some feedback? contact me @jan.andersson.ie@gmail.com", "About Ness", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+        private void HelpButton_Click(object sender, EventArgs e) { MessageBox.Show("Ness is a Programming project README generator. Have some feedback? contact me @Admin@zefir.codes", "About Ness", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         //Sees if checkbox is selected and enables Project installation field
         private void ProjectInstallationDataRequired_CheckedChanged(object sender, EventArgs e)
         {
