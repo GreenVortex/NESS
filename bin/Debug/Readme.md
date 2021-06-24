@@ -1,25 +1,20 @@
-<h1 align='center'>Welcome to PyProbe👋</h1>
+<h1 align='center'>Welcome to Pretzel👋</h1>
 
-> A python program for requesting webserver health.
-- Dependency Installer
-- Server Ping
-- Webserver status code
-- Verbouse logging
-- Probe frequency adjustment
+> An automated text app developed ib python, forget to to text your girlfriend? Pretzel won't
 
 This project was made with Python💻
 
 ## Version
-1.1
+Alpha Build 1
 
 ## Install
 ```sh
-Dependency installer included
+Project does not require an installation
 ```
 
 ## Usage
 ```sh
-python PyProbe.py
+No usage documentation required
 ```
 
 ## Author
