@@ -1,11 +1,11 @@
-<h1 align='center'>Welcome to Pretzel👋</h1>
+<h1 align='center'>Welcome to Dungeons and Dice👋</h1>
 
-> An automated text app developed ib python, forget to to text your girlfriend? Pretzel won't
+> A dice rolling utility for role playing games.
 
-This project was made with Python💻
+This project was made with Javascript💻
 
 ## Version
-Alpha Build 1
+3.0
 
 ## Install
 ```sh
