@@ -20,3 +20,14 @@ C:\Users\Jan\Documents\GitHub\NESS\obj\Debug\Ness.csproj.GenerateResource.cache
 C:\Users\Jan\Documents\GitHub\NESS\obj\Debug\Ness.csproj.CoreCompileInputs.cache
 C:\Users\Jan\Documents\GitHub\NESS\obj\Debug\Ness.exe
 C:\Users\Jan\Documents\GitHub\NESS\obj\Debug\Ness.pdb
+C:\Users\OnceU\Documents\GitHub\NESS\bin\Debug\Ness.exe.config
+C:\Users\OnceU\Documents\GitHub\NESS\bin\Debug\Ness.exe
+C:\Users\OnceU\Documents\GitHub\NESS\bin\Debug\Ness.pdb
+C:\Users\OnceU\Documents\GitHub\NESS\obj\Debug\Ness.csproj.AssemblyReference.cache
+C:\Users\OnceU\Documents\GitHub\NESS\obj\Debug\Ness.Main.resources
+C:\Users\OnceU\Documents\GitHub\NESS\obj\Debug\Ness.PreviewForm.resources
+C:\Users\OnceU\Documents\GitHub\NESS\obj\Debug\Ness.Properties.Resources.resources
+C:\Users\OnceU\Documents\GitHub\NESS\obj\Debug\Ness.csproj.GenerateResource.cache
+C:\Users\OnceU\Documents\GitHub\NESS\obj\Debug\Ness.csproj.CoreCompileInputs.cache
+C:\Users\OnceU\Documents\GitHub\NESS\obj\Debug\Ness.exe
+C:\Users\OnceU\Documents\GitHub\NESS\obj\Debug\Ness.pdb
